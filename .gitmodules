@@ -1,0 +1,3 @@
+[submodule "External/CocoaScript"]
+	path = External/CocoaScript
+	url = https://github.com/bohemiancoding/CocoaScript
