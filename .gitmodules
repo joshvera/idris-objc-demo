@@ -1,3 +1,6 @@
 [submodule "External/CocoaScript"]
 	path = External/CocoaScript
 	url = https://github.com/bohemiancoding/CocoaScript
+[submodule "External/ReactiveCocoa"]
+	path = External/ReactiveCocoa
+	url = https://github.com/ReactiveCocoa/ReactiveCocoa
