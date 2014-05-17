@@ -12,7 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+	NSURL *idrisAppURL = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"js"];
+	NSString *idrisApp = [[NSString alloc] initWithContentsOfURL:idrisAppURL encoding:NSUTF8StringEncoding error:NULL];
+	[[Mocha sharedRuntime] evalString:idrisApp];
     return YES;
 }
 							
