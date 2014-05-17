@@ -18,10 +18,11 @@
 		D156E81119272071008704CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D156E80519272071008704CC /* main.m */; };
 		D156E81219272071008704CC /* VVVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D156E80719272071008704CC /* VVVAppDelegate.m */; };
 		D156E81319272071008704CC /* VVVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D156E80919272071008704CC /* VVVViewController.m */; };
-		D156E81419272071008704CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D156E80B19272071008704CC /* Main.storyboard */; };
 		D156E81519272071008704CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D156E80D19272071008704CC /* InfoPlist.strings */; };
-		D156E81619272071008704CC /* IdrisObjCDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D156E80F19272071008704CC /* IdrisObjCDemo-Info.plist */; };
 		D156E81719272071008704CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D156E81019272071008704CC /* Images.xcassets */; };
+		D1721B7E1927F9C100E7D816 /* libCocoaScript.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1721B7B1927F9C100E7D816 /* libCocoaScript.a */; };
+		D1721B831927FD2300E7D816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D156E80B19272071008704CC /* Main.storyboard */; };
+		D1721B841927FD2600E7D816 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = D1721B811927FC6100E7D816 /* main.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,55 @@
 			proxyType = 1;
 			remoteGlobalIDString = D156E7CA1927200F008704CC;
 			remoteInfo = IdrisObjCDemo;
+		};
+		D156E908192724B1008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E903192724B1008704CC /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1661849DF1E0010F42D;
+			remoteInfo = "libffi-iOS";
+		};
+		D156E90A192724B1008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E903192724B1008704CC /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB13B1911849DF510010F42D;
+			remoteInfo = "libffi-Mac";
+		};
+		D156E912192724D1008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D15AC370486D014006FF6A4;
+			remoteInfo = "Cocoa Script Editor";
+		};
+		D156E914192724D1008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC5FB7C20F1FDCCC00F4ECC2;
+			remoteInfo = "coscript tool";
+		};
+		D156E916192724D1008704CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CC41431A0F25254200E46669;
+			remoteInfo = "Cocoa Script Framework";
+		};
+		D1721B7A1927F9C100E7D816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D156E91C19272523008704CC;
+			remoteInfo = CocoaScript;
+		};
+		D1721B7C1927F9C100E7D816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D156E92A19272523008704CC;
+			remoteInfo = CocoaScriptTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,6 +104,9 @@
 		D156E80E19272071008704CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D156E80F19272071008704CC /* IdrisObjCDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IdrisObjCDemo-Info.plist"; sourceTree = "<group>"; };
 		D156E81019272071008704CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D156E903192724B1008704CC /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = External/libffi/libffi.xcodeproj; sourceTree = "<group>"; };
+		D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cocoa Script.xcodeproj"; path = "External/CocoaScript/Cocoa Script.xcodeproj"; sourceTree = "<group>"; };
+		D1721B811927FC6100E7D816 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = src/main.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1721B7E1927F9C100E7D816 /* libCocoaScript.a in Frameworks */,
 				D156E7D11927200F008704CC /* CoreGraphics.framework in Frameworks */,
 				D156E7D31927200F008704CC /* UIKit.framework in Frameworks */,
 				D156E7CF1927200F008704CC /* Foundation.framework in Frameworks */,
@@ -103,6 +157,8 @@
 		D156E7CD1927200F008704CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */,
+				D156E903192724B1008704CC /* libffi.xcodeproj */,
 				D156E7CE1927200F008704CC /* Foundation.framework */,
 				D156E7D01927200F008704CC /* CoreGraphics.framework */,
 				D156E7D21927200F008704CC /* UIKit.framework */,
@@ -145,12 +201,34 @@
 		D156E80A19272071008704CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D1721B811927FC6100E7D816 /* main.js */,
 				D156E80B19272071008704CC /* Main.storyboard */,
 				D156E80D19272071008704CC /* InfoPlist.strings */,
 				D156E80F19272071008704CC /* IdrisObjCDemo-Info.plist */,
 				D156E81019272071008704CC /* Images.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D156E904192724B1008704CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D156E909192724B1008704CC /* libffi.a */,
+				D156E90B192724B1008704CC /* ffi.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D156E90D192724D1008704CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D156E913192724D1008704CC /* Cocoa Script Editor.app */,
+				D156E915192724D1008704CC /* coscript */,
+				D156E917192724D1008704CC /* CocoaScript.framework */,
+				D1721B7B1927F9C100E7D816 /* libCocoaScript.a */,
+				D1721B7D1927F9C100E7D816 /* CocoaScriptTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +295,16 @@
 			mainGroup = D156E7C21927200F008704CC;
 			productRefGroup = D156E7CC1927200F008704CC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D156E90D192724D1008704CC /* Products */;
+					ProjectRef = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
+				},
+				{
+					ProductGroup = D156E904192724B1008704CC /* Products */;
+					ProjectRef = D156E903192724B1008704CC /* libffi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D156E7CA1927200F008704CC /* IdrisObjCDemo */,
@@ -225,14 +313,66 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D156E909192724B1008704CC /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = D156E908192724B1008704CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D156E90B192724B1008704CC /* ffi.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = ffi.dylib;
+			remoteRef = D156E90A192724B1008704CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D156E913192724D1008704CC /* Cocoa Script Editor.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Cocoa Script Editor.app";
+			remoteRef = D156E912192724D1008704CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D156E915192724D1008704CC /* coscript */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = coscript;
+			remoteRef = D156E914192724D1008704CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D156E917192724D1008704CC /* CocoaScript.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaScript.framework;
+			remoteRef = D156E916192724D1008704CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D1721B7B1927F9C100E7D816 /* libCocoaScript.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaScript.a;
+			remoteRef = D1721B7A1927F9C100E7D816 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D1721B7D1927F9C100E7D816 /* CocoaScriptTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaScriptTests.xctest;
+			remoteRef = D1721B7C1927F9C100E7D816 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		D156E7C91927200F008704CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D156E81419272071008704CC /* Main.storyboard in Resources */,
+				D1721B841927FD2600E7D816 /* main.js in Resources */,
+				D1721B831927FD2300E7D816 /* Main.storyboard in Resources */,
 				D156E81719272071008704CC /* Images.xcassets in Resources */,
-				D156E81619272071008704CC /* IdrisObjCDemo-Info.plist in Resources */,
 				D156E81519272071008704CC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +521,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/IdrisObjCDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"External/CocoaScript/src/framework/mocha/**",
+				);
 				INFOPLIST_FILE = "Resources/IdrisObjCDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,7 +540,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Classes/IdrisObjCDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"External/CocoaScript/src/framework/mocha/**",
+				);
 				INFOPLIST_FILE = "Resources/IdrisObjCDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
