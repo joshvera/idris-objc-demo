@@ -83,7 +83,7 @@ compile_idris_js ()
 {
     cd src/
     idris --codegen javascript Main.idr -o main.js
-    popd
+    cd ../
 }
 
 main
