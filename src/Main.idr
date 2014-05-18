@@ -2,5 +2,4 @@ module Main
 import UIKit
 
 main : IO ()
-main = mkAlert "hello from idris"
-
+main = do show !(alert "hello from idris")
