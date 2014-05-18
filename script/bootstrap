@@ -41,6 +41,8 @@ main ()
         echo "*** Updating submodules..."
         update_submodules
     fi
+
+    compile_idris_js
 }
 
 check_deps ()
@@ -76,5 +78,12 @@ update_submodules ()
 
 export -f bootstrap_submodule
 export -f update_submodules
+
+compile_idris_js ()
+{
+    cd src/
+    idris --codegen javascript Main.idr -o main.js
+    popd
+}
 
 main
