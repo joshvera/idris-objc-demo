@@ -82,6 +82,7 @@ export -f update_submodules
 compile_idris_js ()
 {
     cd src/
+    echo "*** Compiling src/Main.idr..."
     idris --codegen javascript Main.idr -o main.js
     cd ../
 }
