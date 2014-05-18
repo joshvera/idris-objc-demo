@@ -1,13 +1,14 @@
-## A Idris -> Objective-C demo via JavascriptCore
+## An Idris -> Objective-C demo via JavascriptCore
 
 Yeah I know its JavascriptCore, but until one of us write `mkDynamicForeign` or
 relaxes `mkForeigns` literal string argument restriction during the type provider phase, we're stuck with
 this.
 
-# Install
+## Install
 1. Clone the repo
 2. Run `script/bootstrap`
-3. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
+3. Link and include libffi in the CocoaScript submodule xcode project.
+4. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
 
 	```js
 	var main = function(){
@@ -32,6 +33,6 @@ this.
 	});
 	}
 	```
-4. Run it.
+5. Run it.
 
 Pull Requests Welcome! :smile:
