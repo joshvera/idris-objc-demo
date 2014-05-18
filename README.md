@@ -5,10 +5,11 @@ relaxes `mkForeigns` literal string argument restriction during the type provide
 it.
 
 # Install
-1. Clone the repo
-2. cd src/
-3. Run `idris --codegen javascript Main.idr -o src/main.js`
-4. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
+1. Install Idris
+2. Clone the repo
+3. cd src/
+4. Run `idris --codegen javascript Main.idr -o main.js`
+5. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
 
 ```js
 var main = function(){
@@ -35,4 +36,6 @@ return __IDR__mrunMain0()
 });
 }
 ```
-5. Run it.
+6. Run it.
+
+Pull Requests Welcome! 😊
