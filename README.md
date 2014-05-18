@@ -10,6 +10,7 @@ this.
 3. `cd src/`
 4. Run `idris --codegen javascript Main.idr -o main.js`
 5. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
+
 	```js
 	var main = function(){
 	if (document.readyState == "complete" || document.readyState == "loaded") {
@@ -35,6 +36,7 @@ this.
 	});
 	}
 	```
+
 6. Run it.
 
 Pull Requests Welcome! :smile:
