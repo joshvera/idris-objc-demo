@@ -10,33 +10,31 @@ it.
 3. cd src/
 4. Run `idris --codegen javascript Main.idr -o main.js`
 5. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
+	```js
+	var main = function(){
+	if (document.readyState == "complete" || document.readyState == "loaded") {
+	__IDRRT__tailcall(function(){
+	return __IDR__mrunMain0()
+	});
+	} else {
+	window.addEventListener("DOMContentLoaded",function(){
+	__IDRRT__tailcall(function(){
+	return __IDR__mrunMain0()
+	})
+	},false);
+	}
+	}
+	```
 
-```js
-var main = function(){
-if (document.readyState == "complete" || document.readyState == "loaded") {
-__IDRRT__tailcall(function(){
-return __IDR__mrunMain0()
-});
-} else {
-window.addEventListener("DOMContentLoaded",function(){
-__IDRRT__tailcall(function(){
-return __IDR__mrunMain0()
-})
-},false);
-}
-}
-```
+	to:
 
-to:
-
-```js
-var main = function(){
-__IDRRT__tailcall(function(){
-return __IDR__mrunMain0()
-});
-}
-```
-
+	```js
+	var main = function(){
+	__IDRRT__tailcall(function(){
+	return __IDR__mrunMain0()
+	});
+	}
+	```
 6. Run it.
 
 Pull Requests Welcome! 😊
