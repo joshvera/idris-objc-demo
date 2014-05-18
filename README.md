@@ -39,4 +39,4 @@ return __IDR__mrunMain0()
 
 6. Run it.
 
-Pull Requests Welcome! 😊
+Pull Requests Welcome! :smile:
