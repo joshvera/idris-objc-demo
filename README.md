@@ -1,13 +1,13 @@
 ## A Idris -> Objective-C demo via JavascriptCore
 
-Yeah I know JavascriptCore, but until one of us write `mkDynamicForeign` or
+Yeah I know its JavascriptCore, but until one of us write `mkDynamicForeign` or
 relaxes `mkForeigns` literal string argument restriction during the type provider phase, we're stuck with
-it.
+this.
 
 # Install
 1. Install Idris
 2. Clone the repo
-3. cd src/
+3. `cd src/`
 4. Run `idris --codegen javascript Main.idr -o main.js`
 5. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
 
