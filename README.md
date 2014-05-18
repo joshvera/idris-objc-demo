@@ -7,7 +7,7 @@ this.
 ## Install
 1. Clone the repo
 2. Run `script/bootstrap`
-3. Link libffi in the CocoaScript submodule xcode project.
+3. Link and include libffi in the CocoaScript submodule xcode project.
 4. Since the Javascript Idris backend assumes a `document` or `window` object exists in the JS execution context and JavaScriptCore has neither, we need to modify the generated `main` function from:
 
 	```js
