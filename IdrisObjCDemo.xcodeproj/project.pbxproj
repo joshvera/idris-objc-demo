@@ -33,20 +33,6 @@
 			remoteGlobalIDString = D156E7CA1927200F008704CC;
 			remoteInfo = IdrisObjCDemo;
 		};
-		D156E908192724B1008704CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D156E903192724B1008704CC /* libffi.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DB13B1661849DF1E0010F42D;
-			remoteInfo = "libffi-iOS";
-		};
-		D156E90A192724B1008704CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D156E903192724B1008704CC /* libffi.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DB13B1911849DF510010F42D;
-			remoteInfo = "libffi-Mac";
-		};
 		D156E912192724D1008704CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
@@ -104,7 +90,6 @@
 		D156E80E19272071008704CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D156E80F19272071008704CC /* IdrisObjCDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IdrisObjCDemo-Info.plist"; sourceTree = "<group>"; };
 		D156E81019272071008704CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D156E903192724B1008704CC /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = External/libffi/libffi.xcodeproj; sourceTree = "<group>"; };
 		D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cocoa Script.xcodeproj"; path = "External/CocoaScript/Cocoa Script.xcodeproj"; sourceTree = "<group>"; };
 		D1721B811927FC6100E7D816 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = src/main.js; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -158,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */,
-				D156E903192724B1008704CC /* libffi.xcodeproj */,
 				D156E7CE1927200F008704CC /* Foundation.framework */,
 				D156E7D01927200F008704CC /* CoreGraphics.framework */,
 				D156E7D21927200F008704CC /* UIKit.framework */,
@@ -208,15 +192,6 @@
 				D156E81019272071008704CC /* Images.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		D156E904192724B1008704CC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D156E909192724B1008704CC /* libffi.a */,
-				D156E90B192724B1008704CC /* ffi.dylib */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D156E90D192724D1008704CC /* Products */ = {
@@ -300,10 +275,6 @@
 					ProductGroup = D156E90D192724D1008704CC /* Products */;
 					ProjectRef = D156E90C192724D1008704CC /* Cocoa Script.xcodeproj */;
 				},
-				{
-					ProductGroup = D156E904192724B1008704CC /* Products */;
-					ProjectRef = D156E903192724B1008704CC /* libffi.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -314,20 +285,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D156E909192724B1008704CC /* libffi.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libffi.a;
-			remoteRef = D156E908192724B1008704CC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D156E90B192724B1008704CC /* ffi.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = ffi.dylib;
-			remoteRef = D156E90A192724B1008704CC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		D156E913192724D1008704CC /* Cocoa Script Editor.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
