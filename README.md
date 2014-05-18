@@ -25,18 +25,15 @@ this.
 	},false);
 	}
 	}
-	```
 
-	to:
+	// To:
 
-	```js
 	var main = function(){
 	__IDRRT__tailcall(function(){
 	return __IDR__mrunMain0()
 	});
 	}
 	```
-
 6. Run it.
 
 Pull Requests Welcome! :smile:
